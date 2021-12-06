@@ -4,7 +4,7 @@ Written in C++
 This program starts a maze that the user must traverse using commands.
 
 The maze design is input from a file into an array, with 0s to denote walls and spaces to denote traversable space.
-The first line of the file is always the dimensions of the maze, height then width, separated by a space.
+The first line of the file is always the dimensions of the maze, width then height, separated by a space.
 The start is denoted by 'c' (for the character), and the end is denoted by 'e'.
 Empty space within the dimensions of the maze must be spaces.
 

@@ -166,6 +166,12 @@
     <ClInclude Include="MazeLoader.h" />
     <ClInclude Include="Menu.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Maze.txt" />
+    <Text Include="..\Maze2.txt" />
+    <Text Include="..\MazeCover.txt" />
+    <Text Include="..\README.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
