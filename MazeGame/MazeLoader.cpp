@@ -31,7 +31,6 @@ int MazeLoader::inputMaze(string name) {
 	vector<vector<char>> &maze = game.getMaze(); //gets a reference to the maze
 
 	mazeInput >> mazeWidth; //gets the maze's width from the file
-
 	//checks if the maze is the right format, if not informs the player and returns -1, allowing main to repeat input
 	if (mazeInput.fail()) { 
 		cout << "\nMaze " << name << " is an invalid format, please load another maze.\n\n";
@@ -71,7 +70,6 @@ int MazeLoader::inputMaze(string name) {
 		for (int x = 0; x < mazeWidth; x++)
 		{
 			mazeInput.get(maze[y][x]); //inputs the next character
-			cout << maze[y][x];
 			//get's the player's intial position and sets that in the game
 			if (maze[y][x] == 'c')
 			{
@@ -86,7 +84,6 @@ int MazeLoader::inputMaze(string name) {
 			//if the maze contains a wrong character informs the player and returns -1, allowing main to repeat input 
 			else if (maze[y][x] != ' ' && maze[y][x] != 'e' && maze[y][x] != '0') {
 				cout << "\nMaze " << name << " is an invalid format, please load another maze.\n\n";
-				cout << maze[y][x];
 				return -1;
 			}
 		}
