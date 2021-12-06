@@ -1,0 +1,2 @@
+*height* *width*
+*maze here, 0 is walls, space is empty space, c is the player character, e is exits, m is monsters* 
